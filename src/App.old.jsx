@@ -1,10 +1,8 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { Button } from '@/components/ui/button.jsx'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card.jsx'
 import { Badge } from '@/components/ui/badge.jsx'
 import { Separator } from '@/components/ui/separator.jsx'
-import ArticlePage from './components/ArticlePage.jsx'
-import { articles } from './data/articles.js'
 import { 
   Menu, 
   Mail, 
@@ -31,28 +29,10 @@ import teamCollaboration from './assets/teamCollaboration.png'
 
 function App() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-  const [currentView, setCurrentView] = useState('home')
-  const [selectedArticle, setSelectedArticle] = useState(null)
 
   const scrollToSection = (sectionId) => {
     document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' })
     setMobileMenuOpen(false)
-  }
-
-  const handleReadArticle = (articleId) => {
-    const article = articles.find(a => a.id === articleId)
-    setSelectedArticle(article)
-    setCurrentView('article')
-  }
-
-  const handleBackToHome = () => {
-    setCurrentView('home')
-    setSelectedArticle(null)
-  }
-
-  // Show article page if an article is selected
-  if (currentView === 'article' && selectedArticle) {
-    return <ArticlePage article={selectedArticle} onBack={handleBackToHome} />
   }
 
   return (
@@ -574,11 +554,7 @@ function App() {
                     <Badge variant="secondary">Software Development</Badge>
                   </div>
                   
-                  <Button 
-                    variant="outline" 
-                    className="w-full"
-                    onClick={() => handleReadArticle('ai-enterprise-software-development')}
-                  >
+                  <Button variant="outline" className="w-full">
                     <BookOpen className="h-4 w-4 mr-2" />
                     Read Article
                   </Button>
@@ -613,11 +589,7 @@ function App() {
                     <Badge variant="secondary">Cloud</Badge>
                   </div>
                   
-                  <Button 
-                    variant="outline" 
-                    className="w-full"
-                    onClick={() => handleReadArticle('building-high-performance-teams')}
-                  >
+                  <Button variant="outline" className="w-full">
                     <BookOpen className="h-4 w-4 mr-2" />
                     Read Article
                   </Button>
