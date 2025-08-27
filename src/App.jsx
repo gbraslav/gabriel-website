@@ -66,13 +66,14 @@ function App() {
             {/* Desktop Navigation */}
             <div className="hidden md:flex space-x-8">
               <button onClick={() => scrollToSection('home')} className="text-foreground hover:text-primary transition-colors">Home</button>
-              <button onClick={() => scrollToSection('reading-list')} className="text-foreground hover:text-primary transition-colors">Reading List</button>
+
               <button onClick={() => scrollToSection('about')} className="text-foreground hover:text-primary transition-colors">About</button>
               <button onClick={() => scrollToSection('experience')} className="text-foreground hover:text-primary transition-colors">Experience</button>
               <button onClick={() => scrollToSection('skills')} className="text-foreground hover:text-primary transition-colors">Skills</button>
               <button onClick={() => scrollToSection('education')} className="text-foreground hover:text-primary transition-colors">Education</button>
               <button onClick={() => scrollToSection('articles')} className="text-foreground hover:text-primary transition-colors">Articles</button>
               <button onClick={() => scrollToSection('contact')} className="text-foreground hover:text-primary transition-colors">Contact</button>
+              <button onClick={() => scrollToSection('reading-list')} className="text-foreground hover:text-primary transition-colors">Reading List</button>
             </div>
 
             {/* Mobile menu button */}
@@ -129,8 +130,8 @@ function App() {
             </div>
             
             <p className="text-lg md:text-xl max-w-4xl mx-auto leading-relaxed text-gray-200">
-              Dynamic, results-oriented, creative, and highly technical business technology leader with vast experience 
-              and the proven ability to successfully direct technology solutions, people, and large-scale projects.
+            Experienced Software Engineering Executive and Technologist with a proven track record of leading high-performing teams and driving successful technology 
+            initiatives. Skilled in strategic planning, project management, and innovation to deliver large-scale technical solutions.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
