@@ -66,6 +66,7 @@ function App() {
             {/* Desktop Navigation */}
             <div className="hidden md:flex space-x-8">
               <button onClick={() => scrollToSection('home')} className="text-foreground hover:text-primary transition-colors">Home</button>
+              <button onClick={() => scrollToSection('reading-list')} className="text-foreground hover:text-primary transition-colors">Reading List</button>
               <button onClick={() => scrollToSection('about')} className="text-foreground hover:text-primary transition-colors">About</button>
               <button onClick={() => scrollToSection('experience')} className="text-foreground hover:text-primary transition-colors">Experience</button>
               <button onClick={() => scrollToSection('skills')} className="text-foreground hover:text-primary transition-colors">Skills</button>
@@ -91,6 +92,7 @@ function App() {
             <div className="md:hidden py-4 border-t border-border">
               <div className="flex flex-col space-y-2">
                 <button onClick={() => scrollToSection('home')} className="text-left px-4 py-2 text-foreground hover:text-primary transition-colors">Home</button>
+                <button onClick={() => scrollToSection('reading-list')} className="text-left px-4 py-2 text-foreground hover:text-primary transition-colors">Reading List</button>
                 <button onClick={() => scrollToSection('about')} className="text-left px-4 py-2 text-foreground hover:text-primary transition-colors">About</button>
                 <button onClick={() => scrollToSection('experience')} className="text-left px-4 py-2 text-foreground hover:text-primary transition-colors">Experience</button>
                 <button onClick={() => scrollToSection('skills')} className="text-left px-4 py-2 text-foreground hover:text-primary transition-colors">Skills</button>
@@ -103,6 +105,7 @@ function App() {
         </div>
       </nav>
 
+ 
       {/* Hero Section */}
       <section id="home" className="pt-16 min-h-screen flex items-center relative overflow-hidden">
         <div 
@@ -637,6 +640,131 @@ function App() {
           </div>
         </div>
       </section>
+
+     {/* Reading List Section */}
+     <section id="reading-list" className="pt-20 pb-10 bg-background">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-3">Reading List</h2>
+            <p className="text-muted-foreground text-lg max-w-3xl mx-auto">
+              A few recommended reads I often share with teams and peers.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardContent className="p-6 space-y-4">
+                <div className="flex items-center space-x-2 text-sm text-muted-foreground">
+                  <BookOpen className="h-4 w-4" />
+                  <span>Leadership</span>
+                </div>
+                <h3 className="text-lg font-semibold text-foreground">
+                  High Output Management — Andrew Grove
+                </h3>
+                <p className="text-muted-foreground">Timeless principles for building effective engineering orgs.</p>
+                <a
+                  href="https://andrewgrove.com/high-output-management"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center text-blue-600 hover:text-blue-800"
+                >
+                  Read more
+                  <ExternalLink className="h-4 w-4 ml-1" />
+                </a>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardContent className="p-6 space-y-4">
+                <div className="flex items-center space-x-2 text-sm text-muted-foreground">
+                  <BookOpen className="h-4 w-4" />
+                  <span>Systems</span>
+                </div>
+                <h3 className="text-lg font-semibold text-foreground">
+                  Designing Data-Intensive Applications — Martin Kleppmann
+                </h3>
+                <p className="text-muted-foreground">Modern fundamentals for scalable, reliable software systems.</p>
+                <a
+                  href="https://dataintensive.net/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center text-blue-600 hover:text-blue-800"
+                >
+                  Read more
+                  <ExternalLink className="h-4 w-4 ml-1" />
+                </a>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardContent className="p-6 space-y-4">
+                <div className="flex items-center space-x-2 text-sm text-muted-foreground">
+                  <BookOpen className="h-4 w-4" />
+                  <span>Culture</span>
+                </div>
+                <h3 className="text-lg font-semibold text-foreground">
+                  Accelerate — Forsgren, Humble, Kim
+                </h3>
+                <p className="text-muted-foreground">Research-backed practices that drive engineering performance.</p>
+                <a
+                  href="https://itrevolution.com/accelerate/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center text-blue-600 hover:text-blue-800"
+                >
+                  Read more
+                  <ExternalLink className="h-4 w-4 ml-1" />
+                </a>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardContent className="p-6 space-y-4">
+                <div className="flex items-center space-x-2 text-sm text-muted-foreground">
+                  <BookOpen className="h-4 w-4" />
+                  <span>Personal Effectiveness</span>
+                </div>
+                <h3 className="text-lg font-semibold text-foreground">
+                  Atomic Habits — James Clear
+                </h3>
+                <p className="text-muted-foreground">A practical framework for building good habits and breaking bad ones.</p>
+                <a
+                  href="https://jamesclear.com/atomic-habits"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center text-blue-600 hover:text-blue-800"
+                >
+                  Read more
+                  <ExternalLink className="h-4 w-4 ml-1" />
+                </a>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardContent className="p-6 space-y-4">
+                <div className="flex items-center space-x-2 text-sm text-muted-foreground">
+                  <BookOpen className="h-4 w-4" />
+                  <span>Leadership</span>
+                </div>
+                <h3 className="text-lg font-semibold text-foreground">
+                  The Hard Thing About Hard Things — Ben Horowitz
+                </h3>
+                <p className="text-muted-foreground">Real-world lessons on building and running a startup as CEO.</p>
+                <a
+                  href="https://a16z.com/books/the-hard-thing-about-hard-things/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center text-blue-600 hover:text-blue-800"
+                >
+                  Read more
+                  <ExternalLink className="h-4 w-4 ml-1" />
+                </a>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
 
       {/* Contact Section */}
       <section id="contact" className="py-20 bg-muted/50">
