@@ -152,7 +152,7 @@ function App() {
             </div>
 
             <div className="flex justify-center space-x-6 pt-8">
-              <a href="https://www.linkedin.com/in/gbraslavsky/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-300 transition-colors">
+              <a href="https://www.linkedin.com/in/gabby-braslavsky/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-300 transition-colors">
                 <Linkedin className="h-6 w-6" />
               </a>
               <a href="https://github.com/gbraslav/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-300 transition-colors">
@@ -261,9 +261,9 @@ function App() {
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
                   <div>
                     <h3 className="text-2xl font-semibold text-foreground">Chief Technology Officer (CTO)</h3>
-                    <p className="text-lg text-primary font-medium">Conversabridge, Atlanta, GA</p>
+                    <p className="text-lg text-primary font-medium">Conversabridge</p>
                   </div>
-                  <Badge variant="outline" className="mt-2 md:mt-0">02/2024 – 07/2025</Badge>
+                  <Badge variant="outline" className="mt-2 md:mt-0">Current</Badge>
                 </div>
                 <p className="text-muted-foreground mb-4">
                   CTO and co-founder of Conversabridge, a Generative AI/ML auto-agent that maximizes small-business 
@@ -285,7 +285,7 @@ function App() {
                     <h3 className="text-2xl font-semibold text-foreground">Senior Vice President (SVP) of Software Development</h3>
                     <p className="text-lg text-primary font-medium">Global Payments, Atlanta, GA</p>
                   </div>
-                  <Badge variant="outline" className="mt-2 md:mt-0">08/2018 - 02/2024</Badge>
+                  <Badge variant="outline" className="mt-2 md:mt-0"></Badge>
                 </div>
                 <p className="text-muted-foreground mb-4">
                   Modernized Issuer Solutions (legacy TSYS) core products, including Authorization, Fraud, Risk, 
@@ -308,7 +308,7 @@ function App() {
                     <h3 className="text-2xl font-semibold text-foreground">Vice President (VP) of Software Development</h3>
                     <p className="text-lg text-primary font-medium">MedAssets | nThrive, Alpharetta, GA</p>
                   </div>
-                  <Badge variant="outline" className="mt-2 md:mt-0">04/2011 - 07/2018</Badge>
+                  <Badge variant="outline" className="mt-2 md:mt-0"></Badge>
                 </div>
                 <p className="text-muted-foreground mb-4">
                   Led the Charge Integrity software development group, composed of 60 software developers and 
@@ -319,6 +319,43 @@ function App() {
                   <li>Drove product innovation and next-generation product design</li>
                   <li>Achieved significant scalability and performance improvements</li>
                   <li>Raised employee engagement results by 20%</li>
+                </ul>
+              </CardContent>
+            </Card>
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardContent className="p-8">
+                <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
+                  <div>
+                    <h3 className="text-2xl font-semibold text-foreground">Director of Research and Development (R&D)</h3>
+                    <p className="text-lg text-primary font-medium">HP Software, Alpharetta, GA</p>
+                  </div>
+                  <Badge variant="outline" className="mt-2 md:mt-0"></Badge>
+                </div>
+                <p className="text-muted-foreground mb-4">
+                Built software for finding and remediating web services and web application security defects.
+                </p>
+                <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+                  <li>Managed a software development group responsible for the Application Security product suite</li>
+                  <li>Championed and led integration with HP Service-Test and HP Quality Center and Fortify software</li>
+                  <li>Increased product quality, reduced defects backlog by 40% and increased customer satisfaction</li>
+                </ul>
+              </CardContent>
+            </Card>
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardContent className="p-8">
+                <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
+                  <div>
+                    <h3 className="text-2xl font-semibold text-foreground">Engineering Manager</h3>
+                    <p className="text-lg text-primary font-medium">Mercury Interactive, Tel-Aviv, Israel</p>
+                  </div>
+                  <Badge variant="outline" className="mt-2 md:mt-0"></Badge>
+                </div>
+                <p className="text-muted-foreground mb-4">
+                Developed the world’s leading products for automatic software testing - QuickTest Professional and WinRunner.
+                </p>
+                <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+                  <li>Drove revenue growth of from 50M to $150M</li>
+                  <li>Led Front-End engineering team and product integrations</li>
                 </ul>
               </CardContent>
             </Card>
@@ -800,7 +837,7 @@ function App() {
                       </div>
                       <div className="flex items-center space-x-3">
                         <MapPin className="h-5 w-5 text-red-600" />
-                        <span className="text-muted-foreground">Bethesda, MD</span>
+                        <span className="text-muted-foreground">Bethesda, MD / Atlanta, GA</span>
                       </div>
                     </div>
 
@@ -808,7 +845,7 @@ function App() {
                       <h4 className="font-semibold text-foreground">Professional Links</h4>
                       <div className="flex flex-col space-y-2">
                         <a 
-                          href="https://www.linkedin.com/in/gbraslavsky/" 
+                          href="https://www.linkedin.com/in/gabby-braslavsky/" 
                           target="_blank" 
                           rel="noopener noreferrer"
                           className="flex items-center space-x-2 text-gray-600 hover:text-gray-800 transition-colors"
