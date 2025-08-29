@@ -25,7 +25,7 @@ import {
 import './App.css'
 
 // Import background images
-import techBg1 from './assets/bg_option1.jpg'
+import techBg1 from './assets/Google_AI_Studio_2025-08-29T12_10_05.069Z.png'
 import techBg2 from './assets/techBg2.jpg'
 import teamCollaboration from './assets/teamCollaboration.png'
 
@@ -66,7 +66,6 @@ function App() {
             {/* Desktop Navigation */}
             <div className="hidden md:flex space-x-8">
               <button onClick={() => scrollToSection('home')} className="text-foreground hover:text-primary transition-colors">Home</button>
-
               <button onClick={() => scrollToSection('about')} className="text-foreground hover:text-primary transition-colors">About</button>
               <button onClick={() => scrollToSection('experience')} className="text-foreground hover:text-primary transition-colors">Experience</button>
               <button onClick={() => scrollToSection('skills')} className="text-foreground hover:text-primary transition-colors">Skills</button>
@@ -124,12 +123,12 @@ function App() {
               <h1 className="text-4xl md:text-6xl font-bold leading-tight">
                 Gabriel Braslavsky
               </h1>
-              <p className="text-xl md:text-2xl text-gray-300">
+              <p className="text-xl md:text-2xl text-gray-100">
                 Software Engineering Executive | Technologist | CTO
               </p>
             </div>
             
-            <p className="text-lg md:text-xl max-w-4xl mx-auto leading-relaxed text-gray-200">
+            <p className="text-lg md:text-xl max-w-4xl mx-auto leading-relaxed text-gray-100">
             Experienced Software Engineering Executive and Technologist with a proven track record of leading high-performing teams and driving successful technology 
             initiatives. Skilled in strategic planning, project management, and innovation to deliver large-scale technical solutions.
             </p>
@@ -211,7 +210,7 @@ function App() {
                 <CardContent className="space-y-4">
                   <div className="flex items-center space-x-3">
                     <Users className="h-5 w-5 text-blue-600" />
-                    <span>Led teams of 170 FTEs + 250 contractors</span>
+                    <span>Grew a new platform from 0 to 50K users</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <TrendingUp className="h-5 w-5 text-green-600" />
@@ -220,6 +219,10 @@ function App() {
                   <div className="flex items-center space-x-3">
                     <Mic className="h-5 w-5 text-purple-600" />
                     <span>AWS re:Invent 2022 Speaker</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <Award className="h-5 w-5 text-orange-600" />
+                    <span>Served 700M customers /cardholders</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <Award className="h-5 w-5 text-orange-600" />
