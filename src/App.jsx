@@ -27,7 +27,7 @@ import './App.css'
 // Import background images
 import techBg1 from './assets/Google_AI_Studio_2025-08-29T12_10_05.069Z.png'
 import techBg2 from './assets/techBg2.jpg'
-import teamCollaboration from './assets/teamCollaboration.png'
+import teamCollaboration from './assets/Google_AI_Studio_2025-08-29T15_40_40.867Z.jpg'
 
 function App() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -142,9 +142,9 @@ function App() {
                 Get In Touch
               </Button>
               <Button 
-                variant="outline" 
+                //variant="outline" 
                 size="lg" 
-                className="border-white text-white hover:bg-white hover:text-blue-900 px-8 py-3"
+                className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3"
                 onClick={() => scrollToSection('experience')}
               >
                 View Experience
