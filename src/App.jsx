@@ -48,6 +48,10 @@ function App() {
   const handleBackToHome = () => {
     setCurrentView('home')
     setSelectedArticle(null)
+    // Scroll to articles section when returning from article page
+    setTimeout(() => {
+      document.getElementById('articles')?.scrollIntoView({ behavior: 'smooth' })
+    }, 100)
   }
 
   // Show article page if an article is selected
@@ -124,7 +128,7 @@ function App() {
                 Gabriel Braslavsky
               </h1>
               <p className="text-xl md:text-2xl text-gray-100">
-                Software Engineering Executive | Technologist | CTO
+                Software Engineering Executive | Technologist | CTO & Fractional CTO
               </p>
             </div>
             
@@ -697,6 +701,28 @@ function App() {
               <CardContent className="p-6 space-y-4">
                 <div className="flex items-center space-x-2 text-sm text-muted-foreground">
                   <BookOpen className="h-4 w-4" />
+                  <span>AI & Technology</span>
+                </div>
+                <h3 className="text-lg font-semibold text-foreground">
+                  The Coming Wave: AI, Power, and Our Future — Mustafa Suleyman
+                </h3>
+                <p className="text-muted-foreground">An urgent examination of how artificial intelligence will reshape power, politics, and society.</p>
+                <a
+                  href="https://www.thecomingwave.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center text-blue-600 hover:text-blue-800"
+                >
+                  Read more
+                  <ExternalLink className="h-4 w-4 ml-1" />
+                </a>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardContent className="p-6 space-y-4">
+                <div className="flex items-center space-x-2 text-sm text-muted-foreground">
+                  <BookOpen className="h-4 w-4" />
                   <span>Leadership</span>
                 </div>
                 <h3 className="text-lg font-semibold text-foreground">
@@ -802,6 +828,29 @@ function App() {
                 </a>
               </CardContent>
             </Card>
+
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardContent className="p-6 space-y-4">
+                <div className="flex items-center space-x-2 text-sm text-muted-foreground">
+                  <BookOpen className="h-4 w-4" />
+                  <span>Philosophy & Wealth</span>
+                </div>
+                <h3 className="text-lg font-semibold text-foreground">
+                  The Almanack of Naval Ravikant — Eric Jorgenson
+                </h3>
+                <p className="text-muted-foreground">A collection of Naval's wisdom on wealth creation, happiness, and building meaningful relationships.</p>
+                <a
+                  href="https://www.navalmanack.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center text-blue-600 hover:text-blue-800"
+                >
+                  Read more
+                  <ExternalLink className="h-4 w-4 ml-1" />
+                </a>
+              </CardContent>
+            </Card>
+
           </div>
         </div>
       </section>

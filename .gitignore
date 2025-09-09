@@ -1,6 +1,7 @@
 CLAUDE.md
 public/favicon.ico.org.ico
 zip files source/.DS_Store
+src/.DS_Store
 dist/^
 .DS_Store
 .gitignore
