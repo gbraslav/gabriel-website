@@ -65,7 +65,7 @@ function App() {
       <nav className="fixed top-0 w-full bg-background/95 backdrop-blur-sm border-b border-border z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            <div className="text-xl font-bold text-primary">Gabriel Braslavsky</div>
+            <div className="text-xl font-bold text-primary">Gabriel Braslavsky</div> 
             
             {/* Desktop Navigation */}
             <div className="hidden md:flex space-x-8">
@@ -96,13 +96,13 @@ function App() {
             <div className="md:hidden py-4 border-t border-border">
               <div className="flex flex-col space-y-2">
                 <button onClick={() => scrollToSection('home')} className="text-left px-4 py-2 text-foreground hover:text-primary transition-colors">Home</button>
-                <button onClick={() => scrollToSection('reading-list')} className="text-left px-4 py-2 text-foreground hover:text-primary transition-colors">Reading List</button>
                 <button onClick={() => scrollToSection('about')} className="text-left px-4 py-2 text-foreground hover:text-primary transition-colors">About</button>
                 <button onClick={() => scrollToSection('experience')} className="text-left px-4 py-2 text-foreground hover:text-primary transition-colors">Experience</button>
                 <button onClick={() => scrollToSection('skills')} className="text-left px-4 py-2 text-foreground hover:text-primary transition-colors">Skills</button>
                 <button onClick={() => scrollToSection('education')} className="text-left px-4 py-2 text-foreground hover:text-primary transition-colors">Education</button>
                 <button onClick={() => scrollToSection('articles')} className="text-left px-4 py-2 text-foreground hover:text-primary transition-colors">Articles</button>
                 <button onClick={() => scrollToSection('contact')} className="text-left px-4 py-2 text-foreground hover:text-primary transition-colors">Contact</button>
+                <button onClick={() => scrollToSection('reading-list')} className="text-left px-4 py-2 text-foreground hover:text-primary transition-colors">Reading List</button>
               </div>
             </div>
           )}
@@ -960,7 +960,7 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <p className="text-muted-foreground">
-              © 2025 Gabriel Braslavsky. Software Engineering Executive & CTO.
+              © 2025 Gabriel (Gabby) Braslavsky. 
             </p>
             <p className="text-sm text-muted-foreground mt-2">
               Built with React, Tailwind CSS, and modern web technologies.
