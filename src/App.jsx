@@ -74,9 +74,9 @@ function App() {
               <button onClick={() => scrollToSection('skills')} className="text-foreground hover:text-primary transition-colors">Skills</button>
               <button onClick={() => scrollToSection('education')} className="text-foreground hover:text-primary transition-colors">Education</button>
               <button onClick={() => scrollToSection('articles')} className="text-foreground hover:text-primary transition-colors">Articles</button>
-              <button onClick={() => scrollToSection('contact')} className="text-foreground hover:text-primary transition-colors">Contact</button>
               <button onClick={() => scrollToSection('reading-list')} className="text-foreground hover:text-primary transition-colors">Reading List</button>
-            </div>
+              <button onClick={() => scrollToSection('contact')} className="text-foreground hover:text-primary transition-colors">Contact</button>
+             </div>
 
             {/* Mobile menu button */}
             <div className="md:hidden">
@@ -100,8 +100,8 @@ function App() {
                 <button onClick={() => scrollToSection('skills')} className="text-left px-4 py-2 text-foreground hover:text-primary transition-colors">Skills</button>
                 <button onClick={() => scrollToSection('education')} className="text-left px-4 py-2 text-foreground hover:text-primary transition-colors">Education</button>
                 <button onClick={() => scrollToSection('articles')} className="text-left px-4 py-2 text-foreground hover:text-primary transition-colors">Articles</button>
-                <button onClick={() => scrollToSection('contact')} className="text-left px-4 py-2 text-foreground hover:text-primary transition-colors">Contact</button>
                 <button onClick={() => scrollToSection('reading-list')} className="text-left px-4 py-2 text-foreground hover:text-primary transition-colors">Reading List</button>
+                <button onClick={() => scrollToSection('contact')} className="text-left px-4 py-2 text-foreground hover:text-primary transition-colors">Contact</button>
               </div>
             </div>
           )}
@@ -297,7 +297,7 @@ function App() {
                 <ul className="list-disc list-inside space-y-2 text-muted-foreground">
                   <li>Designed scalable solution handling 10K transactions-per-second in 150ms latency</li>
                   <li>Managed 700 million active cardholder accounts</li>
-                  <li>Led large engineering team of FTEs and contractors</li>
+                  <li>Led large engineering teams of FTEs and contractors</li>
                   <li>Replaced legacy mainframe products with AWS-native offerings</li>
                 </ul>
               </CardContent>
