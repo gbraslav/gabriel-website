@@ -25,9 +25,8 @@ import {
 import './App.css'
 
 // Import background images
-import techBg1 from './assets/Google_AI_Studio_2025-08-29T12_10_05.069Z.png'
-import techBg2 from './assets/techBg2.jpg'
-import teamCollaboration from './assets/Google_AI_Studio_2025-08-29T15_40_40.867Z.jpg'
+import techBg1 from './assets/Website_main_background.jpg'
+import teamCollaboration from './assets/Website_collaboration.jpg'
 
 function App() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -214,7 +213,7 @@ function App() {
                 <CardContent className="space-y-4">
                   <div className="flex items-center space-x-3">
                     <Users className="h-5 w-5 text-blue-600" />
-                    <span>Grew a new platform from 0 to 50K users</span>
+                    <span>Grew a new platform from 0 to 100K users</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <TrendingUp className="h-5 w-5 text-green-600" />
@@ -298,7 +297,7 @@ function App() {
                 <ul className="list-disc list-inside space-y-2 text-muted-foreground">
                   <li>Designed scalable solution handling 10K transactions-per-second in 150ms latency</li>
                   <li>Managed 700 million active cardholder accounts</li>
-                  <li>Led team of 170 FTEs and 250 contractors</li>
+                  <li>Led large engineering team of FTEs and contractors</li>
                   <li>Replaced legacy mainframe products with AWS-native offerings</li>
                 </ul>
               </CardContent>
