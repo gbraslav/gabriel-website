@@ -4,6 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Badge } from '@/components/ui/badge.jsx'
 import { Separator } from '@/components/ui/separator.jsx'
 import ArticlePage from './components/ArticlePage.jsx'
+import PersonalPage from './components/PersonalPage.jsx'
 import { articles } from './data/articles.js'
 import { 
   Menu, 
@@ -33,6 +34,55 @@ function App() {
   const [currentView, setCurrentView] = useState('home')
   const [selectedArticle, setSelectedArticle] = useState(null)
 
+  const personalHobbies = [
+    {
+      title: 'Running',
+      subtitle: 'Marathons and tempo mornings',
+      description: 'Training blends speed work, long runs, and strength to stay race-ready year-round.',
+      highlights: ['NYC Marathon finisher', 'Crew lead for local run club'],
+      tags: ['Discipline', 'Outdoors', 'Community']
+    },
+    {
+      title: 'Photography',
+      subtitle: 'Street + candid portraits',
+      description: 'Shooting mostly on mirrorless and occasionally 35mm film to slow down and practice observation.',
+      highlights: ['Documenting travel stories', 'Featured in local gallery pop-up'],
+      tags: ['Creativity', 'Storytelling', 'Design'],
+      link: {
+        label: 'View my Flickr',
+        url: 'https://www.flickr.com/photos/braslavsky/'
+      }
+    },
+    {
+      title: 'Culinary Experiments',
+      subtitle: 'Testing recipes every Sunday',
+      description: 'I explore techniques from different regions, focusing on fresh, seasonal ingredients.',
+      highlights: ['Host quarterly tasting dinners', 'Volunteered with community kitchen'],
+      tags: ['Craft', 'Collaboration', 'Culture']
+    },
+    {
+      title: 'Mentorship & Writing',
+      subtitle: 'Helping early-career engineers',
+      description: 'Outside work I mentor through non-profits and capture lessons learned in personal essays.',
+      highlights: ['Built two mentorship cohorts', 'Monthly essays on leadership'],
+      tags: ['Leadership', 'Growth', 'Impact']
+    },
+    {
+      title: 'Chess',
+      subtitle: 'Strategy and patience training',
+      description: 'Daily puzzles and online rapid games keep my pattern recognition sharp and decision-making calm.',
+      highlights: ['USCF club member', 'Regular local tournament participant'],
+      tags: ['Focus', 'Strategy', 'Discipline']
+    },
+    {
+      title: 'Kiteboarding',
+      subtitle: 'Chasing wind across coasts',
+      description: 'From Montauk to the Caribbean, I ride whenever there’s wind and enjoy teaching newcomers the basics.',
+      highlights: ['Level 3 IKO certified', 'Organize seasonal downwinders'],
+      tags: ['Adventure', 'Balance', 'Community']
+    }
+  ]
+
   const scrollToSection = (sectionId) => {
     document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' })
     setMobileMenuOpen(false)
@@ -44,18 +94,24 @@ function App() {
     setCurrentView('article')
   }
 
-  const handleBackToHome = () => {
+  const handleBackToHome = ({ scrollToArticles = true } = {}) => {
     setCurrentView('home')
     setSelectedArticle(null)
-    // Scroll to articles section when returning from article page
-    setTimeout(() => {
-      document.getElementById('articles')?.scrollIntoView({ behavior: 'smooth' })
-    }, 100)
+    if (scrollToArticles) {
+      // Scroll to articles section when returning from article page
+      setTimeout(() => {
+        document.getElementById('articles')?.scrollIntoView({ behavior: 'smooth' })
+      }, 100)
+    }
   }
 
   // Show article page if an article is selected
   if (currentView === 'article' && selectedArticle) {
     return <ArticlePage article={selectedArticle} onBack={handleBackToHome} />
+  }
+
+  if (currentView === 'personal') {
+    return <PersonalPage hobbies={personalHobbies} onBack={() => handleBackToHome({ scrollToArticles: false })} />
   }
 
   return (
@@ -74,6 +130,7 @@ function App() {
               <button onClick={() => scrollToSection('skills')} className="text-foreground hover:text-primary transition-colors">Skills</button>
               <button onClick={() => scrollToSection('education')} className="text-foreground hover:text-primary transition-colors">Education</button>
               <button onClick={() => scrollToSection('articles')} className="text-foreground hover:text-primary transition-colors">Articles</button>
+              <button onClick={() => setCurrentView('personal')} className="text-foreground hover:text-primary transition-colors">Personal</button>
               <button onClick={() => scrollToSection('reading-list')} className="text-foreground hover:text-primary transition-colors">Reading List</button>
               <button onClick={() => scrollToSection('contact')} className="text-foreground hover:text-primary transition-colors">Contact</button>
              </div>
@@ -100,6 +157,7 @@ function App() {
                 <button onClick={() => scrollToSection('skills')} className="text-left px-4 py-2 text-foreground hover:text-primary transition-colors">Skills</button>
                 <button onClick={() => scrollToSection('education')} className="text-left px-4 py-2 text-foreground hover:text-primary transition-colors">Education</button>
                 <button onClick={() => scrollToSection('articles')} className="text-left px-4 py-2 text-foreground hover:text-primary transition-colors">Articles</button>
+                <button onClick={() => { setCurrentView('personal'); setMobileMenuOpen(false) }} className="text-left px-4 py-2 text-foreground hover:text-primary transition-colors">Personal</button>
                 <button onClick={() => scrollToSection('reading-list')} className="text-left px-4 py-2 text-foreground hover:text-primary transition-colors">Reading List</button>
                 <button onClick={() => scrollToSection('contact')} className="text-left px-4 py-2 text-foreground hover:text-primary transition-colors">Contact</button>
               </div>
