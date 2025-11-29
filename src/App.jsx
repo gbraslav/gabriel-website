@@ -40,7 +40,11 @@ function App() {
       subtitle: 'Marathons and tempo mornings',
       description: 'Training blends speed work, long runs, and strength to stay race-ready year-round.',
       highlights: ['NYC Marathon finisher', 'Crew lead for local run club'],
-      tags: ['Discipline', 'Outdoors', 'Community']
+      tags: ['Discipline', 'Outdoors', 'Community'],
+      link: {
+        label: 'View my Strava profile',
+        url: 'https://www.strava.com/athletes/22713753'
+      }
     },
     {
       title: 'Photography',
@@ -72,7 +76,11 @@ function App() {
       subtitle: 'Strategy and patience training',
       description: 'Daily puzzles and online rapid games keep my pattern recognition sharp and decision-making calm.',
       highlights: ['USCF club member', 'Regular local tournament participant'],
-      tags: ['Focus', 'Strategy', 'Discipline']
+      tags: ['Focus', 'Strategy', 'Discipline'],
+      link: {
+        label: 'View my Chess.com profile',
+        url: 'https://www.chess.com/member/gabbyb'
+      }
     },
     {
       title: 'Kiteboarding',
@@ -130,9 +138,9 @@ function App() {
               <button onClick={() => scrollToSection('skills')} className="text-foreground hover:text-primary transition-colors">Skills</button>
               <button onClick={() => scrollToSection('education')} className="text-foreground hover:text-primary transition-colors">Education</button>
               <button onClick={() => scrollToSection('articles')} className="text-foreground hover:text-primary transition-colors">Articles</button>
-              <button onClick={() => setCurrentView('personal')} className="text-foreground hover:text-primary transition-colors">Personal</button>
               <button onClick={() => scrollToSection('reading-list')} className="text-foreground hover:text-primary transition-colors">Reading List</button>
               <button onClick={() => scrollToSection('contact')} className="text-foreground hover:text-primary transition-colors">Contact</button>
+              <button onClick={() => setCurrentView('personal')} className="text-foreground hover:text-primary transition-colors">When not working</button>
              </div>
 
             {/* Mobile menu button */}
@@ -157,9 +165,9 @@ function App() {
                 <button onClick={() => scrollToSection('skills')} className="text-left px-4 py-2 text-foreground hover:text-primary transition-colors">Skills</button>
                 <button onClick={() => scrollToSection('education')} className="text-left px-4 py-2 text-foreground hover:text-primary transition-colors">Education</button>
                 <button onClick={() => scrollToSection('articles')} className="text-left px-4 py-2 text-foreground hover:text-primary transition-colors">Articles</button>
-                <button onClick={() => { setCurrentView('personal'); setMobileMenuOpen(false) }} className="text-left px-4 py-2 text-foreground hover:text-primary transition-colors">Personal</button>
                 <button onClick={() => scrollToSection('reading-list')} className="text-left px-4 py-2 text-foreground hover:text-primary transition-colors">Reading List</button>
                 <button onClick={() => scrollToSection('contact')} className="text-left px-4 py-2 text-foreground hover:text-primary transition-colors">Contact</button>
+                <button onClick={() => { setCurrentView('personal'); setMobileMenuOpen(false) }} className="text-left px-4 py-2 text-foreground hover:text-primary transition-colors">When not working</button>
               </div>
             </div>
           )}
