@@ -1,0 +1,144 @@
+:root {
+  --primary-color: #007bff; /* Blue */
+  --secondary-color: #6c757d; /* Muted Blue/Gray */
+  --accent-color: #8B4513; /* Brown */
+  --text-color: #333;
+  --bg-color: #fff;
+  --border-color: #ddd;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  margin: 0;
+  padding: 20px;
+}
+
+.App {
+  max-width: 900px;
+  margin: 0 auto;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1, h2, h3 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+h2 {
+  border-bottom: 2px solid var(--accent-color);
+  padding-bottom: 0.5rem;
+  margin-top: 2rem;
+}
+
+h3 {
+    color: var(--secondary-color);
+}
+
+/* Header */
+.header {
+  text-align: center;
+  border-bottom: 2px solid var(--accent-color);
+  padding-bottom: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--accent-color);
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.contact p {
+  margin: 0;
+}
+
+.career-highlight {
+  font-style: italic;
+  color: var(--secondary-color);
+}
+
+
+/* Core Strengths */
+.core-strengths ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.core-strengths li {
+  background-color: #f8f9fa;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+}
+
+/* Experience */
+.experience .job {
+  margin-bottom: 2rem;
+  border-left: 3px solid var(--accent-color);
+  padding-left: 1.5rem;
+}
+
+.experience .job:last-child {
+  margin-bottom: 0;
+}
+
+.company {
+    font-weight: bold;
+}
+
+.dates {
+    font-style: italic;
+    color: var(--secondary-color);
+}
+
+.experience ul {
+  padding-left: 20px;
+}
+
+/* Education */
+.education .education-item {
+  margin-bottom: 1rem;
+}
+
+/* Skills */
+.skills .skill-category {
+  margin-bottom: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .App {
+    padding: 1rem;
+  }
+  .contact {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+}
