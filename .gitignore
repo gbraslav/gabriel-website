@@ -5,3 +5,4 @@ src/.DS_Store
 dist/^
 .DS_Store
 .gitignore
+node_modules/
