@@ -1,10 +1,14 @@
 {
-  "buildCommand": "pnpm install && pnpm run build && cd stephanie/stephanie-website && npm install && npm run build && cd ../.. && mkdir -p dist/stephanie && cp -r stephanie/stephanie-website/build/. dist/stephanie/",
+  "buildCommand": "pnpm install && pnpm run build && cd stephanie/stephanie-website && npm install && npm run build && cd ../.. && mkdir -p dist/stephanie && cp -r stephanie/stephanie-website/build/. dist/stephanie/ && mkdir -p dist/devin && cp -r stephanie/stephanie_devin_website/. dist/devin/",
   "outputDirectory": "dist",
   "rewrites": [
     {
       "source": "/stephanie",
       "destination": "/stephanie/index.html"
+    },
+    {
+      "source": "/devin",
+      "destination": "/devin/index.html"
     }
   ]
 }
