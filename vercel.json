@@ -9,6 +9,10 @@
     {
       "source": "/devin",
       "destination": "/devin/index.html"
+    },
+    {
+      "source": "/devin/",
+      "destination": "/devin/index.html"
     }
   ]
 }
