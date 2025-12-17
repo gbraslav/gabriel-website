@@ -1,4 +1,5 @@
 {
+  "buildCommand": "pnpm install && pnpm run build && mkdir -p dist/stephanie && cp -r stephanie/stephanie_devin_website/. dist/stephanie/",
   "outputDirectory": "dist",
   "rewrites": [
     {
@@ -6,12 +7,8 @@
       "destination": "/stephanie/index.html"
     },
     {
-      "source": "/devin",
-      "destination": "/devin/index.html"
-    },
-    {
-      "source": "/devin/",
-      "destination": "/devin/index.html"
+      "source": "/stephanie/",
+      "destination": "/stephanie/index.html"
     }
   ]
 }
