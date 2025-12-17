@@ -1,11 +1,14 @@
 {
   "buildCommand": "pnpm install && pnpm run build && mkdir -p dist/stephanie && cp -r stephanie/stephanie_devin_website/. dist/stephanie/",
   "outputDirectory": "dist",
-  "rewrites": [
+  "redirects": [
     {
       "source": "/stephanie",
-      "destination": "/stephanie/index.html"
-    },
+      "destination": "/stephanie/",
+      "permanent": false
+    }
+  ],
+  "rewrites": [
     {
       "source": "/stephanie/",
       "destination": "/stephanie/index.html"
